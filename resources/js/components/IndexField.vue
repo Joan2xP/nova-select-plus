@@ -23,6 +23,10 @@ export default {
       debugger
       return this.field.displayedAs || this.field.value
     },
+  },
+  beforeMount() {
+    console.log(this.field.value)
   }
+  
 }
 </script>

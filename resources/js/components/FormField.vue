@@ -33,11 +33,11 @@
           </template>
           <template #no-options>
             <span v-if="currentField.isAjaxSearchable">
-              Type to search...
-              <span v-if="ajaxSearchNoResults">Nothing found.</span>
+              Escriu per buscar...
+              <span v-if="ajaxSearchNoResults">No s'ha trobat res.</span>
             </span>
             <span v-else>
-              Sorry, no matching options!
+              No hi ha opcions que coincideixin
             </span>
           </template>
           <template #option="option">
@@ -78,7 +78,7 @@
           href="#"
           @click.prevent="isInReorderMode = true"
         >
-          Reorder
+          Reordenar
         </a>
         <a
           v-else
@@ -86,7 +86,7 @@
           href="#"
           @click.prevent="isInReorderMode = false"
         >
-          Finish Reordering
+          Acabar de reordenar
         </a>
       </span>
     </template>
