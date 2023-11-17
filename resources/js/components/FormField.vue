@@ -214,6 +214,9 @@ export default {
 
   mounted () {
     this.setup()
-  }
+    let dashboard = [...document.getElementsByClassName("v-select")].parentElement.parentElement.parentElement;
+    dashboard.classList.remove("overflow-hidden");
+  },
+  
 }
 </script>
